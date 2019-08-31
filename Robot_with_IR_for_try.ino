@@ -62,7 +62,7 @@ void loop() {
   digitalWrite(IN_2, LOW); 
   digitalWrite(IN_3, LOW);
   digitalWrite(IN_4, HIGH);
-  delay(100);
+  delay(300);
           break; //ออกจากloopทันที
        
 case backward:
@@ -71,21 +71,27 @@ case backward:
   digitalWrite(IN_2, HIGH); 
   digitalWrite(IN_3, HIGH);
   digitalWrite(IN_4, LOW);
-  delay(100);
+  delay(300);
          break; //ออกจากloopทันที
        
 case left:
        //หันซ้าย
   digitalWrite(IN_3, LOW);
   digitalWrite(IN_4, HIGH);
-  delay(100);
+
+  digitalWrite(IN_1, LOW);
+  digitalWrite(IN_2, HIGH);
+  delay(150);
           break; //ออกจากloopทันที  
         
   case right:
         //หันขวา
   digitalWrite(IN_1, HIGH);
   digitalWrite(IN_2, LOW);
-  delay(100);
+
+    digitalWrite(IN_3, HIGH);
+  digitalWrite(IN_4, LOW);
+  delay(150);
           break; //ออกจากloopทันที
 
    case collup: //คำสั่งยกแขนขึ้น
